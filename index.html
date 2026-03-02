@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>183 High Street Laundromat | Clean, Fast, Community</title>
+  <meta name="description" content="Lowell's modern laundromat with large-capacity machines, parking, bilingual support, and AI concierge for quick help." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">183 High Street Laundromat</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="btn primary" href="#visit">Get Directions</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Lowell, MA • Clean • Fast • Safe</p>
+          <h1>The Cleanest & Most Advanced Laundromat in Lowell</h1>
+          <p>Large-capacity washers, efficient dryers, convenient parking, and a comfortable space with charging stations and snacks.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#visit">Get Directions</a>
+            <a class="btn" href="tel:+19785550183">Call Now</a>
+            <a class="btn" href="#ai">Ask AI Concierge</a>
+          </div>
+          <p class="tiny">EN / ES support • New ownership since 2025 • Community-focused</p>
+        </div>
+        <aside class="card">
+          <h3>Open Today</h3>
+          <ul>
+            <li>Large 60–65 lb washers</li>
+            <li>35 lb & 50 lb options</li>
+            <li>10 security cameras</li>
+            <li>Plenty of parking</li>
+          </ul>
+          <a class="btn primary full" href="#pricing">See Pricing</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid-3">
+          <article class="card"><h3>Self-Service Laundry</h3><p>Quick, modern, high-capacity machines for small and large loads.</p></article>
+          <article class="card"><h3>Wash & Fold (Add)</h3><p>Drop-off convenience service for busy customers and families.</p></article>
+          <article class="card"><h3>Commercial Accounts (Add)</h3><p>Recurring plans for Airbnb, gyms, salons, clinics, and local businesses.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2>Simple Pricing (Template)</h2>
+        <div class="grid-3">
+          <article class="card"><h3>Small Load</h3><p class="price">$X.XX</p><p>Best for daily clothes.</p></article>
+          <article class="card"><h3>Medium / Large</h3><p class="price">$X.XX</p><p>Great for weekly family loads.</p></article>
+          <article class="card"><h3>XL 60–65 lb</h3><p class="price">$X.XX</p><p>Comforters, bulk laundry, and big loads.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2>What Customers Say</h2>
+        <div class="grid-3">
+          <article class="card"><p>“Very clean, convenient location, and friendly staff.”</p></article>
+          <article class="card"><p>“New ownership made a huge difference—comfortable and modern.”</p></article>
+          <article class="card"><p>“Large machines and easy parking. Highly recommended.”</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section alt">
+      <div class="container ai-wrap">
+        <div>
+          <h2>AI Concierge (Lead Capture)</h2>
+          <p>Visitors can ask about prices, best machine size, hours, and directions. Capture phone/email for offers and reminders.</p>
+        </div>
+        <div class="card">
+          <div id="chatLog" class="chat-log"></div>
+          <div class="chat-row">
+            <input id="chatInput" type="text" placeholder="Example: What machine should I use for 3 comforters?" />
+            <button id="chatSend" class="btn primary">Ask</button>
+          </div>
+          <p class="tiny">Demo mode. Connect to your backend AI endpoint later.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <div class="container visit-grid">
+        <div>
+          <h2>Visit Us</h2>
+          <p><strong>183 High Street, Lowell, MA 01852</strong></p>
+          <p>Phone: (978) XXX-XXXX</p>
+          <p>Hours: [Add hours]</p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://maps.google.com" target="_blank" rel="noreferrer">Get Directions</a>
+            <a class="btn" href="tel:+19785550183">Call</a>
+          </div>
+        </div>
+        <form class="card lead-form">
+          <h3>Get Weekly Laundry Deals</h3>
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Phone" required />
+          <input type="email" placeholder="Email (optional)" />
+          <button class="btn primary" type="submit">Join Offers List</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 183 High Street Laundromat • Lowell, MA • EN / ES</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
