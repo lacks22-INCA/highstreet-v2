@@ -83,3 +83,20 @@ input{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);ba
   h1{font-size:1.8rem}
   .nav nav{display:none}
 }
+/* --- polish / premium feel --- */
+body{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.nav nav a{ padding:8px 10px; border-radius:10px; }
+.nav nav a:hover{ background:#f1f5f9; color:var(--text); }
+
+.card{ box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06); }
+.card:hover{ transform: translateY(-2px); transition: 180ms ease; }
+
+.btn{ transition: 180ms ease; }
+.btn:hover{ border-color:#cbd5e1; transform: translateY(-1px); }
+.btn.primary:hover{ filter: brightness(0.95); }
+
+.section{ border-top: 1px solid var(--line); }
+.hero{ border-bottom: 1px solid var(--line); }
+
+h1{ letter-spacing:-0.02em; }
