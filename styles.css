@@ -100,3 +100,14 @@ body{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .hero{ border-bottom: 1px solid var(--line); }
 
 h1{ letter-spacing:-0.02em; }
+/* --- FORCE REMOVE PINK / GRADIENT OVERRIDES --- */
+body, main, .section, .alt, .hero, header {
+  background-image: none !important;
+  background-color: var(--bg) !important;
+}
+
+/* Put a clean blue gradient ONLY on hero */
+.hero{
+  background-image: radial-gradient(900px 420px at top right, #dbeafe, #eff6ff 60%, transparent) !important;
+  background-color: #ffffff !important;
+}
