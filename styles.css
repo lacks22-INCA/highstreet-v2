@@ -37,7 +37,7 @@ body{
 /* Hero */
 .hero{
   padding:72px 0;
-  background:radial-gradient(900px 420px at top right,#dbeafe,transparent)
+  background: radial-gradient(900px 420px at top right, #dbeafe, #eff6ff 60%, transparent);
 }
 .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
 
