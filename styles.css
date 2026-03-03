@@ -1,4 +1,6 @@
-:root{--bg:#0e1220;--paper:#151a2b;--text:#f5f7ff;--muted:#c3cbe7;--brand:#43d48f;--line:#2b3350}
+:root{.topbar{background:#ffffffee;}
+.alt{background:#f1f5f9;}
+.hero{padding:72px 0;background:radial-gradient(900px 420px at top right,#dbeafe,transparent)}}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui;background:var(--bg);color:var(--text);line-height:1.55}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}.topbar{position:sticky;top:0;background:#0e1220e8;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
 .nav{display:flex;align-items:center;justify-content:space-between;height:66px}.brand{font-weight:800}.nav nav a{color:var(--muted);text-decoration:none;margin:0 10px}
