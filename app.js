@@ -15,10 +15,12 @@ if(send && input){
     if(!q) return;
     add('Visitor', q);
     input.value = '';
-    let r = 'We recommend a large machine for bulky loads. Would you like directions or today\'s pricing?';
-    if(/hours|open/i.test(q)) r = 'We are open today. Tap Call for exact hours confirmation.';
-    if(/price|cost|how much/i.test(q)) r = 'Pricing depends on machine size. Tap “See Pricing” and ask staff for current specials.';
-    if(/comforter|blanket/i.test(q)) r = 'For comforters, use 50–65 lb washers for best cleaning and drying efficiency.';
+
+    let r = 'For comforters or bulky loads, use our 50–65 lb machines for best results.';
+    if(/hours|open|horario/i.test(q)) r = 'Wash & Fold hours are daily from 9:00 AM to 7:00 PM.';
+    if(/price|cost|precio/i.test(q)) r = 'Wash & Fold pricing: $1.00/lb standard, $1.50/lb next-day service, 20 lb minimum.';
+    if(/directions|address|ubicacion|location/i.test(q)) r = 'We are at 183 High Street, Lowell, MA 01852. Tap Get Directions for navigation.';
+
     add('AI Concierge', r);
   });
 }

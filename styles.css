@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root{
   --bg:#ffffff;
   --paper:#ffffff;
@@ -111,3 +112,34 @@ body, main, .section, .alt, .hero, header {
   background-image: radial-gradient(900px 420px at top right, #dbeafe, #eff6ff 60%, transparent) !important;
   background-color: #ffffff !important;
 }
+=======
+:root{--bg:#f4f8ff;--paper:#ffffff;--text:#10213d;--muted:#4f678f;--brand:#0e5fd8;--line:#d8e3f8;--alt:#eaf2ff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;background:#ffffffeb;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-weight:800;color:var(--brand)}
+.nav nav a{color:var(--muted);text-decoration:none;margin:0 10px;font-weight:600}
+.hero{padding:72px 0;background:linear-gradient(135deg,#ffffff 0%,#e9f1ff 100%)}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+h1{font-size:2.2rem;line-height:1.15;margin:.2rem 0 1rem;color:#0c2d63}
+h2{font-size:1.7rem;margin-top:0;color:#0c2d63}
+.kicker{color:var(--brand);font-weight:800}.lead{color:#214275}.es{color:#2f558f}
+.tiny{color:var(--muted);font-size:.9rem}
+.section{padding:56px 0}.alt{background:var(--alt)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-2,.ai-wrap,.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 3px 12px rgba(13,72,165,.06)}
+.quick ul{padding-left:20px;margin:0}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #b6ccf2;text-decoration:none;color:#103065;background:#fff;cursor:pointer;font-weight:700}
+.btn.primary{background:var(--brand);color:#fff;border-color:#0e5fd8}.btn.full{width:100%;text-align:center}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.chat-log{height:130px;overflow:auto;background:#f8fbff;border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:8px}
+.chat-row{display:flex;gap:8px}
+input,button{font:inherit}
+input{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--text);margin:6px 0}
+a{color:var(--brand)}
+.footer{padding:20px 0;border-top:1px solid var(--line);color:var(--muted);background:#fff}
+@media (max-width:940px){.hero-grid,.grid-3,.grid-2,.ai-wrap,.visit-grid{grid-template-columns:1fr}h1{font-size:1.85rem}.nav nav{display:none}}
+>>>>>>> Stashed changes
