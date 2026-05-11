@@ -62,33 +62,72 @@
           <article class="card"><h3>Comfort + Convenience</h3><p>Clean facility, efficient dryers, plenty of parking, charging station, snacks, and 10 security cameras.</p></article>
 <section id="services" class="section">
  
-  </div>
-  <!-- FULL WIDTH GALLERY -->
-  <div style="
-    width: 100vw;
-    margin-left: calc(-35vw + 60%);
-    padding: 40px 20px;
-  ">
+  <div style="max-width: 900px; margin: auto; position: relative;">
 
-    <div style="
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      max-width: 1400px;
-      margin: auto;
-    ">
+  <!-- Image -->
+  <img id="galleryImage" src="images/laundro1.jpg"
+    style="width: 100%; border-radius: 12px; display: block;" />
 
-      <img src="images/laundro1.jpg" style="width: 100%; border-radius: 12px;" />
-      <img src="images/laundro2.jpg" style="width: 100%; border-radius: 12px;" />
-      <img src="images/laundro3.jpg" style="width: 100%; border-radius: 12px;" />
-      <img src="images/laundro4.jpg" style="width: 100%; border-radius: 12px;" />
+  <!-- Left button -->
+  <button onclick="prevImage()" style="
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+  ">‹</button>
 
-      <img src="images/laundro8.jpg" style="width: 100%; border-radius: 12px;" />
-      <img src="images/laundro9.jpg" style="width: 100%; border-radius: 12px;" />
-      <img src="images/laundro10.jpg" style="width: 100%; border-radius: 12px;" />
-      <img src="images/laundro11.jpg" style="width: 100%; border-radius: 12px;" />
+  <!-- Right button -->
+  <button onclick="nextImage()" style="
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+  ">›</button>
 
-    </div>
+</div>
+
+<script>
+  const images = [
+    "images/laundro1.jpg",
+    "images/laundro2.jpg",
+    "images/laundro3.jpg",
+    "images/laundro4.jpg",
+    "images/laundro8.jpg",
+    "images/laundro9.jpg",
+    "images/laundro10.jpg",
+    "images/laundro11.jpg"
+  ];
+
+  let index = 0;
+
+  function showImage() {
+    document.getElementById("galleryImage").src = images[index];
+  }
+
+  function nextImage() {
+    index = (index + 1) % images.length;
+    showImage();
+  }
+
+  function prevImage() {
+    index = (index - 1 + images.length) % images.length;
+    showImage();
+  }
+</script>
 
 </section>
 
