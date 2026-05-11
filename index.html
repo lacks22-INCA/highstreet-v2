@@ -62,76 +62,59 @@
           <article class="card"><h3>Comfort + Convenience</h3><p>Clean facility, efficient dryers, plenty of parking, charging station, snacks, and 10 security cameras.</p></article>
 <section id="services" class="section">
  
-  <div style="max-width: 900px; margin: auto; position: relative;">
+ <section id="services" class="section">
 
-  <!-- Image -->
-  <img id="galleryImage" src="images/laundro1.jpg"
-    style="width: 100%; border-radius: 12px; display: block;" />
+  <div class="container">
+    <h2>Services / Servicios</h2>
 
-  <!-- Left button -->
-  <button onclick="prevImage()" style="
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 50%;
-  ">‹</button>
+    <div class="grid-3">
+      <article class="card">
+        <h3>Self-Service Laundry</h3>
+        <p>Quick, modern, high-capacity machines for small and large loads.</p>
+      </article>
 
-  <!-- Right button -->
-  <button onclick="nextImage()" style="
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 50%;
-  ">›</button>
+      <article class="card">
+        <h3>Large Load Specialists</h3>
+        <p>Most modern 60 lb and 65 lb washers in Lowell, plus 35 lb and 50 lb options.</p>
+      </article>
 
-</div>
+      <article class="card">
+        <h3>Comfort + Convenience</h3>
+        <p>Clean facility, efficient dryers, plenty of parking, charging station, snacks, and 10 security cameras.</p>
+      </article>
+    </div>
+  </div>
 
-<script>
-  const images = [
-    "images/laundro1.jpg",
-    "images/laundro2.jpg",
-    "images/laundro3.jpg",
-    "images/laundro4.jpg",
-    "images/laundro8.jpg",
-    "images/laundro9.jpg",
-    "images/laundro10.jpg",
-    "images/laundro11.jpg"
-  ];
+  <!-- FULL WIDTH GALLERY -->
+  <div style="
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 40px 20px;
+  ">
 
-  let index = 0;
+    <div style="
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1800px;
+      margin: auto;
+    ">
 
-  function showImage() {
-    document.getElementById("galleryImage").src = images[index];
-  }
+      <img src="images/laundro1.jpg" style="width: 100%; border-radius: 12px;" />
+      <img src="images/laundro2.jpg" style="width: 100%; border-radius: 12px;" />
+      <img src="images/laundro3.jpg" style="width: 100%; border-radius: 12px;" />
+      <img src="images/laundro4.jpg" style="width: 100%; border-radius: 12px;" />
 
-  function nextImage() {
-    index = (index + 1) % images.length;
-    showImage();
-  }
+      <img src="images/laundro8.jpg" style="width: 100%; border-radius: 12px;" />
+      <img src="images/laundro9.jpg" style="width: 100%; border-radius: 12px;" />
+      <img src="images/laundro10.jpg" style="width: 100%; border-radius: 12px;" />
+      <img src="images/laundro11.jpg" style="width: 100%; border-radius: 12px;" />
 
-  function prevImage() {
-    index = (index - 1 + images.length) % images.length;
-    showImage();
-  }
-</script>
+    </div>
+
+  </div>
 
 </section>
-
-</div>
 </section>
     </section>
 
